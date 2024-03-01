@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arvo', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    font-family: 'Arvo', sans-serif;
+    margin-top: 10px;
+    background-color: rgba(240, 240, 240, 0.322);
+    font-size: 18px;
+    border-radius: 6px;
+    padding: 7px;
+    box-shadow: none;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.541);
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.student-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 60vw;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.603);
+    width: 60vw;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    min-height: 16px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.541);
+    padding: 7px;
+    margin: 7px;
+}
+
+body {
+    opacity: 0;
+    animation: fade-in 0.7s forwards;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
