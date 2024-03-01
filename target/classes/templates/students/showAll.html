@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/showAllstyle.css}" />
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="logo">
+        <a href="/index.html"><img src="/images/logo.png" height="150px" padding="5px"></a>
+    </div>
+    <div class="container">
+        <h1>Behold, Your Students:</h1>
+        <div class="student-container">
+            <div class="student" th:each="student:${stus}"
+                th:style="'height: ' + ${student.height/2} + 'px; width: ' + ${student.weight/2} + 'px'">
+                <p class="flex-item" th:text="${student.name}" th:style="'color: ' + ${student.hairColor}"></p>
+                <p class=" flex-item" th:text="${student.gpa}"></p>
+            </div>
+        </div>
+        <a href="/app.html">
+            <button class="button">Return.</button>
+        </a>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Made by me 2024.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
